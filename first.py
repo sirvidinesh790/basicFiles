@@ -1,5 +1,7 @@
 print "Welcome"
 print ""
+
+
 a = 7
 b = 6
 
@@ -19,6 +21,7 @@ while(check == 'y'):
       a =  input("enter value")
       b =  raw_input("enter operator")
       c =  input("enter value")
+
       if(b == '+'):
            d = a + c
            print d
@@ -26,5 +29,3 @@ while(check == 'y'):
            d = a - c
            print d
       check = raw_input("y / n\n")
-      if(check == n):
-           break
