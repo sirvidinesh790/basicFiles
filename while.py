@@ -12,7 +12,7 @@
 #while loop runs the block of code until a specific condition is False.
 #while can be used in many intelligent ways, code more and more to find out how
 
-a = 456
+a = 400
 b = 0
 ############################
 while(a > b):
