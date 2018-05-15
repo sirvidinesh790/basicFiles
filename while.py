@@ -11,35 +11,40 @@
 
 #while loop runs the block of code until a specific condition is False.
 #while can be used in many intelligent ways, code more and more to find out how
+
 a = 456
+b = 0
 ############################
-while(a > 50):
+while(a > b):
 	print 1
+	b = input("Enter value of b : ")
 	print 2
 	print 3
 print 4
 print 5
 ############################
 
-
+a = 1000
 #############################
-while(condition):
+while(a > b):
 	print 1
+	b = input("b : ")
 	print 2
-	if(anotherCondition):
+	if(b == 8):
 		break
 	print 3
 ############################
 
 
+b = 600
 
-while(condition or anotherCondition):
+while( (b > 500) or (b < 100) ):
 	print 1
 	print 2
-	
+	b = input("Enter b : ")
 	print 3
 
-
+"""
 #############################
 while(condition):
 	print 1
@@ -49,6 +54,7 @@ while(condition):
 	print 3
 	print 4
 ##############################
+"""
 
 #A string is a list or an array of characters
 mySentance = "this line will be printed until the letter z is encounter"
@@ -76,7 +82,16 @@ while(wish == "y"):
 	wish = raw_input("What is your wish ? ")
 
 
+a = 100
+b = 1
 
-
+while(a > b):
+	print 1
+	b = raw_input("b : ") # b = int(raw_input("b : "))
+	b = int(b)
+	print 2
+	if(b == 0):
+		break
+	print 3
 
 
