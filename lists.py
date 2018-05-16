@@ -1,21 +1,16 @@
-
+#list is a collection of data type enumerated by index startinng from 0
+#unlike in c / c++, python supports lists with any kinds of data type
+#list can have a list inside of it,
 l = [34, "prashant", 56.78, 45, ["tiwari", 79], 56]
 
-#we can create list inside of a list, and as many nested list i want
-
 students = ["prashant", "tiwari", "sagar", "mohit", "saurav", "gaurav", "manish", "manoj"]
-
-#as we did with strings, we do all kinds of indexing / slicing / stepping
-#negetive indexing, mulitidimesional indexing
 print l[-2][1]
 
 
 print "..................................."
 
 
-n = name[0].upper()
-print n
 
-for s in students:
-	for letter in s:
-		print letter
+for val in students:
+	val = val.upper()
+	print val
