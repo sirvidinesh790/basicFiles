@@ -1,3 +1,4 @@
+"""
 print "Welcome"
 print ""
 
@@ -42,3 +43,17 @@ while(check == 'y'):
       check = raw_input("y / n\n")
       if(check == n):
            break
+"""
+
+print("welcome")
+print""
+a = input(" enter a")
+b = input(" enter b")
+c=a*b
+print "multi is : " + str(c)
+d=a-b
+print "sub is : " +str(c)
+e=a+b
+print "sum is :"  +str(c)
+f=(2*a)+5*b
+print "fun is :"  +str(f)
