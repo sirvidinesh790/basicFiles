@@ -26,17 +26,15 @@ def keypad():
                 if GPIO.input (ROW[i]) == 0:
                     print MATRIX[i][j]
                     time.sleep(1)
-                    d=MATRIX[i][j]
+                    return MATRIX[i][j]
                    
 
             GPIO.output(COL[j],1)
     
-    return MATRIX[i][j]
+    return "Nothing"
 try:
     while(True):
-        f=keypad()
-        if (f==3):
-            print "right"
+        print keypad()
         
 except KeyboardInterrupt:
     GPIO.cleanup()
