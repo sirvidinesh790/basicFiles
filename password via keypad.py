@@ -26,12 +26,12 @@ def keypad():
                 if GPIO.input (ROW[i]) == 0:
                     print MATRIX[i][j]
                     time.sleep(1)
-                    return MATRIX[i][j]
+                    value = MATRIX[i][j]
                    
 
             GPIO.output(COL[j],1)
     
-    return "Nothing"
+    return value
 try:
     while(True):
         print keypad()
