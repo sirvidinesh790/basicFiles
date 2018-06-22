@@ -1,3 +1,4 @@
+#testing for git
 import cv2
 from cv2 import imshow
 from time import sleep
@@ -10,7 +11,7 @@ print t
 
 while(True):
 
-	image = camera.read()[1]
+	image = camera.read()[1] # 1 for index of tuple having image
 
 	cv2.imshow("Video",image)
 	if cv2.waitKey(10) == ord('q'):
