@@ -6,7 +6,7 @@ from time import sleep
 font = cv2.FONT_HERSHEY_SIMPLEX
 ##########################IMAGE PROCESSING################################################
 # dont bother below line for now
-MIN_MATCH_COUNT = 24
+MIN_MATCH_COUNT = 100
 
 #Creating Instance of SHIFT/SURF detector for extractinng key points
 #in image for feature extraction
@@ -18,13 +18,13 @@ flann = cv2.FlannBasedMatcher(flannParam, {})
 
 #Load the training image to extract it's features as Keypoints and Descriptions
 #of each point in the  image
-imageForTrainingBiscuit = cv2.imread("TrainingData/teapad.jpeg",0)
+imageForTrainingBiscuit = cv2.imread("TrainingData/1.jpeg",0)
 trainKeyPointsBiscuit , trainDescriptionBiscuit = detector.detectAndCompute(imageForTrainingBiscuit,None)
 
-imageForTrainingMyPhone = cv2.imread("TrainingData/hulk.jpeg",0)
+imageForTrainingMyPhone = cv2.imread("TrainingData/2.jpeg",0)
 trainKeyPointsMyPhone , trainDescriptionMyPhone = detector.detectAndCompute(imageForTrainingMyPhone,None)
 
-imageForTrainingDantKanti = cv2.imread("TrainingData/dantkanti.jpg",0)
+imageForTrainingDantKanti = cv2.imread("TrainingData/3.jpeg",0)
 trainKeyPointsDantKanti , trainDescriptionDantKanti = detector.detectAndCompute(imageForTrainingDantKanti,None)
 
 
@@ -46,7 +46,7 @@ try:
 	while(True):
 		#Load the live data to extract it's feature as Keypoint and Descrpitions
 		#of each point in the image again as we did earlier
-		imageFromCamera = camera.read()[1]
+		status, imageFromCamera = camera.read()
 		imageGRAYtoDetect = cv2.cvtColor(imageFromCamera, cv2.COLOR_BGR2GRAY)
 		imageKeyPoints, imageDescription = detector.detectAndCompute(imageGRAYtoDetect,None)
 

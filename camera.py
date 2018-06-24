@@ -7,7 +7,7 @@ camera = cv2.VideoCapture(0)
 
 #t = 1.0/10.0
 t = 1 / 30.0
-print t
+
 
 while(True):
 
